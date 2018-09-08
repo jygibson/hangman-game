@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hangman game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+<body>
+  <h1> the west wing </h1>  
+  <h2> pick any letter to try and guess the word </h2>
+
+  <div class="theme-picture">
+  </div>
+
+  <div class="wins"> wins:<span id="winScore"></span> </div>
+  <div class="losses">losses: <span id="lossScore"></span></div>
+  <div class="letters-guessed">you've guessed:<span id="guessed"></span></div>
+  <div class="guesses-remaining"> guesses remaining:<span id="guessesleft"></span></div>
+<div class="word-field">current word: <span id="word"></span></div>
+
+<!--we will need the instructions on the page:
+Guess what word I'm thinking of!
+wins
+losses
+guesses left
+your guesses so far
+
+the game will need to record the keystrokes of the user- document.onkeyup(event)
+it will need to apply math for computer to pick a random word from an array math.floor(math.random)
+it will need to compare whether or not the letter picked is within the words (.charAt for loop)
+
+user gets 10 guesses
+if the user guesses a letter in the word the computer generates, it will show the letter in the word field
+if the user guesses an incorrect letter, it will decrease the guesses left column by 1 ( i--) 
+all keystrokes are recorded next to guesses so far
+after 10 guesses, the losses counter will increase by 1. The game will reset (new word from the bank)!-->
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
